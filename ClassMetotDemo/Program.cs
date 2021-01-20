@@ -11,7 +11,7 @@ namespace ClassMetotDemo
             müsteri.Ad = "Uğur";
             müsteri.Soyad = "Çivgin";
             müsteri.Cinsiyet = 'E';
-            müsteri.KimlikNo = "123412332311";
+            müsteri.KimlikNo = "1234123323191";
 
             Müsteri müsteri2 = new Müsteri();
             müsteri2.Id = 2;
