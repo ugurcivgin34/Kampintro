@@ -1,30 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace GenericsIntro
+namespace Ornek
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            MyList<string> isimler = new MyList<string>();
+            isimler.Add("okan");
+
+
+
+        }
+
+
+
+    }
+
     class MyList<T>
     {
         T[] items;
-        //consctructor..Bu MyList classını newlediğimizde public MyList yani constructor otomatik çalışıyor
         public MyList()
         {
             items = new T[0];
         }
+
         public void Add(T item)
         {
             T[] tempArray = items;
-            items = new T[items.Length+1];
+            items = new T[items.Length + 1];
+
             for (int i = 0; i < tempArray.Length; i++)
             {
                 items[i] = tempArray[i];
-            }
 
+            }
             items[items.Length - 1] = item;
         }
-
-        
-        }
     }
+}
+
+    
+
+    
+   
+    
+    
 
